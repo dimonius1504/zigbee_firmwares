@@ -5,14 +5,14 @@ Zigbee module: Ebyte E72-2G4M20S1E:
 
 * DIO_5: 20dBm PA
 * DIO_6: 2.4GHz
-* DIO_7: LED action
-* DIO_8: LED connected to net
+* DIO_7: LED reporting
+* DIO_8: LED connected
 * DIO_9: LED relay 0 ON/OFF (test)
-* DIO_30: relay endpoint 2
-* DIO_29: relay endpoint 3
-* DIO_28: relay endpoint 4
-* DIO_27: relay endpoint 5
-* DIO_26: relay endpoint 6
+* DIO_30: relay 0
+* DIO_29: relay 1
+* DIO_28: relay 2
+* DIO_27: relay 3
+* DIO_26: relay 4
 * DIO_12 (RX), DIO_13 (TX): UART to PZEM-004Tv2.0
 
 Endpoints:
