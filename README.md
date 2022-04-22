@@ -5,9 +5,9 @@ Zigbee module: Ebyte E72-2G4M20S1E:
 
 * DIO_5: 20dBm PA
 * DIO_6: 2.4GHz
-* DIO_7: LED reporting
-* DIO_8: LED connected
-* DIO_9: LED relay 0 ON/OFF (test)
+* DIO_7: LED blink while reporting
+* DIO_8: LED connected to coordinator/router
+* DIO_9: LED ON if any relay ON
 * DIO_30: relay 0
 * DIO_29: relay 1
 * DIO_28: relay 2
