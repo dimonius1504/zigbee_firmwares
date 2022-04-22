@@ -8,6 +8,8 @@ Zigbee module: Ebyte E72-2G4M20S1E:
 * DIO_7: LED blink while reporting
 * DIO_8: LED connected to coordinator/router
 * DIO_9: LED ON if any relay ON
+* DIO_14: button 1, toggle relay 0
+* DIO_15: button 2, rejoin to coordinator/router
 * DIO_30: relay 0
 * DIO_29: relay 1
 * DIO_28: relay 2
@@ -23,6 +25,10 @@ Endpoints:
 * 4: relay 2, switch 2
 * 5: relay 3, switch 3
 * 6: relay 4, switch 4
+
+Issues:
+* no switches support
+* wrong energy consumption multiplier in z2m converter
 
 ## Usage in Zigbee2mqtt:
 
