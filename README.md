@@ -41,6 +41,7 @@ external_converters:
 ```
 
 JSON message:
+```js
 {
     "current": 0,
     "energy": 1,
@@ -54,6 +55,7 @@ JSON message:
     "temperature": 24.08,
     "voltage": 221.6
 }
+```
 
 ## My constraction
 
