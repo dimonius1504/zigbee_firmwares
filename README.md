@@ -39,6 +39,22 @@ external_converters:
   - D1ZOnOff.converters.js
 ...
 ```
+
+JSON message:
+{
+    "current": 0,
+    "energy": 1,
+    "linkquality": 94,
+    "power": 0,
+    "state_l1": "OFF",
+    "state_l2": "OFF",
+    "state_l3": "OFF",
+    "state_l4": "OFF",
+    "state_l5": "OFF",
+    "temperature": 24.08,
+    "voltage": 221.6
+}
+
 ## My constraction
 
 ![alt text](https://github.com/dimonius1504/zigbee_firmwares/blob/main/img/IMG_20220429_140914.jpg?raw=true)
