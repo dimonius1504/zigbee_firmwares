@@ -41,7 +41,7 @@ external_converters:
 ```
 
 JSON message:
-```js
+```
 {
     "current": 0,
     "energy": 1,
