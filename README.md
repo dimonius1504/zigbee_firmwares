@@ -28,7 +28,6 @@ Endpoints:
 
 Issues:
 * no switches support
-* wrong energy consumption multiplier in z2m converter
 
 ## Usage in Zigbee2mqtt:
 
