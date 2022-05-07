@@ -64,6 +64,5 @@ JSON message:
 ![alt text](https://github.com/dimonius1504/zigbee_firmwares/blob/main/img/IMG_20220429_143005.jpg?raw=true)
 ![alt text](https://github.com/dimonius1504/zigbee_firmwares/blob/main/img/IMG_20220429_144933.jpg?raw=true)
 ![alt text](https://github.com/dimonius1504/zigbee_firmwares/blob/main/img/IMG_20220429_144958.jpg?raw=true)
-![alt text](https://github.com/dimonius1504/zigbee_firmwares/blob/main/img/IMG_20220501_210825.jpg?raw=true)
 ![alt text](https://github.com/dimonius1504/zigbee_firmwares/blob/main/img/IMG_20220506_210419.jpg?raw=true)
 ![alt text](https://github.com/dimonius1504/zigbee_firmwares/blob/main/img/IMG_20220506_210812.jpg?raw=true)

@@ -53,10 +53,19 @@ d1bdg_electrical_measurement = {
         const payload = {};
         for (const entry of lookup) {
             if (msg.data.hasOwnProperty(entry.key)) {
-                const factor = getFactor(entry.factor);
+		
+		// const factor = getFactor(entry.factor);
+		let factor = 1;
+		if (entry.key === 'rmsCurrent')
+            	    factor = 0.01;
+		else if (entry.key === 'activePower')
+		    factor = 1
+		else if (entry.key === 'rmsVoltage')
+		    factor = 0.1;
+
                 const property = entry.name; //postfixWithEndpointName(entry.name, msg, model);
                 payload[property] = precisionRound(msg.data[entry.key] * factor, 2);
-	        //payload[property] = precisionRound(msg.data[entry.key] / 10, 1);
+	        // payload[property] = precisionRound(msg.data[entry.key] / 10, 1);
             }
         }
         return payload;
@@ -70,7 +79,7 @@ d1bdg_metering = {
         const payload = {};
         const multiplier = msg.endpoint.getClusterAttributeValue('seMetering', 'multiplier');
         const divisor = msg.endpoint.getClusterAttributeValue('seMetering', 'divisor');
-        const factor = 1; //multiplier && divisor ? multiplier / divisor : null;
+        const factor = 0.001; //multiplier && divisor ? multiplier / divisor : null;
 
         if (msg.data.hasOwnProperty('instantaneousDemand')) {
             let power = msg.data['instantaneousDemand'];
@@ -86,15 +95,15 @@ d1bdg_metering = {
             if (msg.data.hasOwnProperty('currentSummDelivered')) {
                 const data = msg.data['currentSummDelivered'];
                 const value = (parseInt(data[0]) << 32) + parseInt(data[1]);
-                //energy += value * factor;
-	    energy += value;//
+                energy += value * factor;
+		//energy += value;
             }
             if (msg.data.hasOwnProperty('currentSummReceived')) {
                 const data = msg.data['currentSummReceived'];
                 const value = (parseInt(data[0]) << 32) + parseInt(data[1]);
                 energy -= value * factor;
             }
-            payload.energy = precisionRound(energy, 2);
+            payload.energy = precisionRound(energy, 3);
         }
 
         return payload;
