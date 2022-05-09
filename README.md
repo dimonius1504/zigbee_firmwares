@@ -28,6 +28,14 @@ E72-2G4M20S1E pins:
 * DIO_26: relay 4
 * DIO_12 (RX), DIO_13 (TX): UART to PZEM-004Tv2.0
 
+Timings:
+* system temperature: 15 seconds after power on, every 30 seconds
+* relay states: 15 seconds after power on, every 60 seconds
+* AC voltage: 10 seconds after power on, every 10 seconds, if value changed >= 1V, else - every 60 seconds
+* AC current: 10 seconds after power on, every 10 seconds, if value changed >= 0.01A, else - every 60 seconds
+* AC power: 10 seconds after power on, every 10 seconds, if value changed >= 1W, else - every 60 seconds
+* energy consumption: 10 seconds after power on, every 10 seconds, if value changed >= 0.01kWh, else - every 60 seconds
+
 Issues:
 * no switches support
 
