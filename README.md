@@ -1,8 +1,19 @@
 # zigbee_firmwares
 Firmwares for CC2652P chip
 
-Zigbee module: Ebyte E72-2G4M20S1E:
+Zigbee router with endpoints:
+* msTemperatureMeasurement (internal temperature), endpoint 1
+* haElectricalMeasurement (AC voltage, AC current, AC power), endpoint 1
+* seMetering (energy consumption), endpoint 1
+* genOnOff (relays 0-4), endpoints 2-6
+* genMultistateInput (buttons), endpoints 2-6
 
+Modules:
+* Zigbee: Ebyte E72-2G4M20S1E
+* Electrical measurement: PZEM-004Tv2.0
+* Relays: any with input signal 3.3V
+
+E72-2G4M20S1E pins:
 * DIO_5: 20dBm PA
 * DIO_6: 2.4GHz
 * DIO_7: LED blink while reporting
@@ -16,15 +27,6 @@ Zigbee module: Ebyte E72-2G4M20S1E:
 * DIO_27: relay 3
 * DIO_26: relay 4
 * DIO_12 (RX), DIO_13 (TX): UART to PZEM-004Tv2.0
-
-Endpoints:
-
-* 1: internal temperature, voltage AC, current AC, power AC, energy from PZEM-004Tv2.0
-* 2: relay 0, switch 0
-* 3: relay 1, switch 1
-* 4: relay 2, switch 2
-* 5: relay 3, switch 3
-* 6: relay 4, switch 4
 
 Issues:
 * no switches support
