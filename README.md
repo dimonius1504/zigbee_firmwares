@@ -75,3 +75,9 @@ JSON message:
 ![alt text](https://github.com/dimonius1504/zigbee_firmwares/blob/main/img/IMG_20220429_144958.jpg?raw=true)
 ![alt text](https://github.com/dimonius1504/zigbee_firmwares/blob/main/img/IMG_20220506_210419.jpg?raw=true)
 ![alt text](https://github.com/dimonius1504/zigbee_firmwares/blob/main/img/IMG_20220506_210812.jpg?raw=true)
+
+## My Zigbee network map
+
+relays-bath2 router/endpoint:
+
+![alt text](https://github.com/dimonius1504/zigbee_firmwares/blob/main/img/my-zigbee-map.png?raw=true)
