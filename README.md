@@ -66,7 +66,7 @@ JSON message:
 }
 ```
 
-## My constraction
+## My construction
 
 ![alt text](https://github.com/dimonius1504/zigbee_firmwares/blob/main/img/IMG_20220429_140914.jpg?raw=true)
 ![alt text](https://github.com/dimonius1504/zigbee_firmwares/blob/main/img/IMG_20220429_141058.jpg?raw=true)
